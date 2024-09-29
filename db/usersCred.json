@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "email": "chaitanyajambhulkar51@gmail.com",
+    "password": "$2a$10$w5FFoQKfnHUN4mfgM7CPlOrsmpW84y.tsF785HMJok3Fk73.dLvT2"
+  },
+  {
+    "id": 2,
+    "email": "chaitanyajambhulkar512@gmail.com",
+    "password": "$2a$10$deGLBYC9CFSL5e8VF5qLG.cjZF/2CsXcmOkFKt5AoFnCj5fR3urpO"
+  },
+  {
+    "id": 3,
+    "email": "chaitanyajambhulkar1234@gmail.com",
+    "password": "$2a$10$Vmhqs.I0S1Ok81XXoXmOWu8MED.isZKL0kyjQdMRWdAXiFHF1QFHK"
+  }
+]
