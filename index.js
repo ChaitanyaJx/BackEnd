@@ -12,16 +12,23 @@ const validator = require('validator');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.JWT_SECRET_KEY || 'fallback_secret_key';
-const FRONTEND_URL = 'http://localhost:5173';
+const FRONTEND_URLS = ['http://localhost:5173', 'https://skillmetric.netlify.app'];
 
 // Middleware
 app.use(express.json());
 app.use(passport.initialize());
 
 const corsOptions = {
-  origin: FRONTEND_URL,
+  origin: function (origin, callback) {
+    if (FRONTEND_URLS.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   optionsSuccessStatus: 200
 };
+
 app.use(cors(corsOptions));
 
 // Ensure the db directory exists
@@ -168,4 +175,6 @@ app.use((req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Allowed origins: ${FRONTEND_URLS.join(', ')}`);
+
 });
