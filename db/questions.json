@@ -1,0 +1,149 @@
+{
+    "branches": {
+      "ECE": {
+        "questions": [
+          {
+            "id": 1,
+            "title": "MOSFET Operation",
+            "tag": "Electronics",
+            "contributed_by": "John Doe",
+            "description": "Explain the principle of operation of a MOSFET.",
+            "success_rate": 85,
+            "attempts": 200,
+            "options": [
+              "A: Field-effect control",
+              "B: Current control",
+              "C: Voltage control",
+              "D: Charge control"
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "title": "Modulator Purpose",
+            "tag": "Communication",
+            "contributed_by": "Jane Smith",
+            "description": "What is the primary purpose of a modulator?",
+            "success_rate": 75,
+            "attempts": 150,
+            "options": [
+              "A: To amplify signals",
+              "B: To encode information",
+              "C: To decode signals",
+              "D: To filter noise"
+            ],
+            "answer": "B"
+          }
+        ]
+      },
+      "AIDS": {
+        "questions": [
+          {
+            "id": 1,
+            "title": "Virus Causing AIDS",
+            "tag": "Health",
+            "contributed_by": "Dr. Emily White",
+            "description": "What virus is responsible for causing AIDS?",
+            "success_rate": 90,
+            "attempts": 250,
+            "options": [
+              "A: HIV",
+              "B: HPV",
+              "C: HCV",
+              "D: HSV"
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "title": "HIV Transmission",
+            "tag": "Health",
+            "contributed_by": "Dr. Alex Brown",
+            "description": "What is the main mode of transmission for HIV?",
+            "success_rate": 80,
+            "attempts": 180,
+            "options": [
+              "A: Airborne",
+              "B: Sexual contact",
+              "C: Contaminated water",
+              "D: Insect bites"
+            ],
+            "answer": "B"
+          }
+        ]
+      },
+      "Mech": {
+        "questions": [
+          {
+            "id": 1,
+            "title": "Thermodynamics Laws",
+            "tag": "Thermodynamics",
+            "contributed_by": "Prof. Sarah Lee",
+            "description": "What are the three laws of thermodynamics?",
+            "success_rate": 70,
+            "attempts": 120,
+            "options": [
+              "A: Energy conservation",
+              "B: Entropy increase",
+              "C: Absolute zero",
+              "D: All of the above"
+            ],
+            "answer": "D"
+          },
+          {
+            "id": 2,
+            "title": "Mechanical Advantage",
+            "tag": "Mechanics",
+            "contributed_by": "Tom Green",
+            "description": "What is mechanical advantage?",
+            "success_rate": 65,
+            "attempts": 140,
+            "options": [
+              "A: Ratio of output to input force",
+              "B: Ratio of distance moved",
+              "C: Both A and B",
+              "D: None of the above"
+            ],
+            "answer": "C"
+          }
+        ]
+      },
+      "CSE": {
+        "questions": [
+          {
+            "id": 1,
+            "title": "Sorting Algorithms",
+            "tag": "Algorithms",
+            "contributed_by": "Alice Johnson",
+            "description": "What is the time complexity of Quick Sort?",
+            "success_rate": 80,
+            "attempts": 300,
+            "options": [
+              "A: O(n log n)",
+              "B: O(n^2)",
+              "C: O(n)",
+              "D: O(log n)"
+            ],
+            "answer": "A"
+          },
+          {
+            "id": 2,
+            "title": "Data Structures",
+            "tag": "Data Structures",
+            "contributed_by": "Mike Davis",
+            "description": "Which data structure uses LIFO?",
+            "success_rate": 85,
+            "attempts": 250,
+            "options": [
+              "A: Queue",
+              "B: Stack",
+              "C: Array",
+              "D: Linked List"
+            ],
+            "answer": "B"
+          }
+        ]
+      }
+    }
+  }
+  
