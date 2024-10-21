@@ -13,5 +13,15 @@
     "id": 3,
     "email": "chaitanyajambhulkar1234@gmail.com",
     "password": "$2a$10$Vmhqs.I0S1Ok81XXoXmOWu8MED.isZKL0kyjQdMRWdAXiFHF1QFHK"
+  },
+  {
+    "id": 4,
+    "email": "chaitanyajambhulkar768+study@gmail.com",
+    "password": "$2a$10$tYPoCe.2wa7f07Lx2w.bM.lUxRIGuBUuhjm14lUngs02QMW2Zmo9e"
+  },
+  {
+    "id": 5,
+    "email": "chaitanyajambhulkar768+study1@gmail.com",
+    "password": "$2a$10$pouxcMriuTef0ELyJtXDYuuPBDJuRqZiijTer5GrZRRQ3VFMg8N1G"
   }
 ]
