@@ -64,6 +64,21 @@ const writeUsersToFile = (users) => {
   }
 };
 
+const getQuestionsFromFile = () => {
+  try {
+    const filePath = path.join(__dirname, 'db', 'questions.json');
+    if (!fs.existsSync(filePath)) {
+      fs.writeFileSync(filePath, '{}');
+      return {};
+    }
+    const rawData = fs.readFileSync(filePath);
+    return JSON.parse(rawData);
+  } catch (error) {
+    console.error('Error reading questions file:', error);
+    return {};
+  }
+};
+
 // Token blacklist
 const tokenBlacklist = new Set();
 
@@ -90,6 +105,23 @@ passport.use(
 );
 
 // Routes
+
+app.get('/questions/:field', (req, res) => {
+  try {
+    const { field } = req.params;
+    const questions = getQuestionsFromFile();
+    
+    if (!questions[field]) {
+      return res.status(404).json({ message: 'No questions found for this field' });
+    }
+    
+    res.json(questions[field]);
+  } catch (error) {
+    console.error('Error fetching questions:', error);
+    res.status(500).json({ message: 'Internal Server Error', error: error.message });
+  }
+});
+
 app.post('/register', async (req, res, next) => {
   try {
     const { email, password } = req.body;
@@ -153,12 +185,24 @@ app.post('/login', async (req, res, next) => {
 
 app.post('/logout', passport.authenticate('jwt', { session: false }), (req, res) => {
   const token = req.headers.authorization.split(' ')[1];
-  tokenBlacklist.add(token);
+  tokenBlacklist.add(token);``
   res.json({ message: 'Logged out successfully' });
 });
 
 app.get('/protected', passport.authenticate('jwt', { session: false }), (req, res) => {
   res.json({ message: 'You have access to this protected route', user: req.user });
+});
+
+// Add this temporary debug route to your server
+app.get('/debug/questions', (req, res) => {
+  const questions = getQuestionsFromFile();
+  res.json({
+    availableFields: Object.keys(questions),
+    questionCount: Object.entries(questions).reduce((acc, [field, questions]) => {
+      acc[field] = questions.length;
+      return acc;
+    }, {})
+  });
 });
 
 // Error handling middleware
@@ -171,6 +215,8 @@ app.use((err, req, res, next) => {
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
+
+
 
 // Start server
 app.listen(PORT, () => {

@@ -1,149 +1,146 @@
 {
-    "branches": {
-      "ECE": {
-        "questions": [
-          {
-            "id": 1,
-            "title": "MOSFET Operation",
-            "tag": "Electronics",
-            "contributed_by": "John Doe",
-            "description": "Explain the principle of operation of a MOSFET.",
-            "success_rate": 85,
-            "attempts": 200,
-            "options": [
-              "A: Field-effect control",
-              "B: Current control",
-              "C: Voltage control",
-              "D: Charge control"
-            ],
-            "answer": "A"
-          },
-          {
-            "id": 2,
-            "title": "Modulator Purpose",
-            "tag": "Communication",
-            "contributed_by": "Jane Smith",
-            "description": "What is the primary purpose of a modulator?",
-            "success_rate": 75,
-            "attempts": 150,
-            "options": [
-              "A: To amplify signals",
-              "B: To encode information",
-              "C: To decode signals",
-              "D: To filter noise"
-            ],
-            "answer": "B"
-          }
-        ]
-      },
-      "AIDS": {
-        "questions": [
-          {
-            "id": 1,
-            "title": "Virus Causing AIDS",
-            "tag": "Health",
-            "contributed_by": "Dr. Emily White",
-            "description": "What virus is responsible for causing AIDS?",
-            "success_rate": 90,
-            "attempts": 250,
-            "options": [
-              "A: HIV",
-              "B: HPV",
-              "C: HCV",
-              "D: HSV"
-            ],
-            "answer": "A"
-          },
-          {
-            "id": 2,
-            "title": "HIV Transmission",
-            "tag": "Health",
-            "contributed_by": "Dr. Alex Brown",
-            "description": "What is the main mode of transmission for HIV?",
-            "success_rate": 80,
-            "attempts": 180,
-            "options": [
-              "A: Airborne",
-              "B: Sexual contact",
-              "C: Contaminated water",
-              "D: Insect bites"
-            ],
-            "answer": "B"
-          }
-        ]
-      },
-      "Mech": {
-        "questions": [
-          {
-            "id": 1,
-            "title": "Thermodynamics Laws",
-            "tag": "Thermodynamics",
-            "contributed_by": "Prof. Sarah Lee",
-            "description": "What are the three laws of thermodynamics?",
-            "success_rate": 70,
-            "attempts": 120,
-            "options": [
-              "A: Energy conservation",
-              "B: Entropy increase",
-              "C: Absolute zero",
-              "D: All of the above"
-            ],
-            "answer": "D"
-          },
-          {
-            "id": 2,
-            "title": "Mechanical Advantage",
-            "tag": "Mechanics",
-            "contributed_by": "Tom Green",
-            "description": "What is mechanical advantage?",
-            "success_rate": 65,
-            "attempts": 140,
-            "options": [
-              "A: Ratio of output to input force",
-              "B: Ratio of distance moved",
-              "C: Both A and B",
-              "D: None of the above"
-            ],
-            "answer": "C"
-          }
-        ]
-      },
-      "CSE": {
-        "questions": [
-          {
-            "id": 1,
-            "title": "Sorting Algorithms",
-            "tag": "Algorithms",
-            "contributed_by": "Alice Johnson",
-            "description": "What is the time complexity of Quick Sort?",
-            "success_rate": 80,
-            "attempts": 300,
-            "options": [
-              "A: O(n log n)",
-              "B: O(n^2)",
-              "C: O(n)",
-              "D: O(log n)"
-            ],
-            "answer": "A"
-          },
-          {
-            "id": 2,
-            "title": "Data Structures",
-            "tag": "Data Structures",
-            "contributed_by": "Mike Davis",
-            "description": "Which data structure uses LIFO?",
-            "success_rate": 85,
-            "attempts": 250,
-            "options": [
-              "A: Queue",
-              "B: Stack",
-              "C: Array",
-              "D: Linked List"
-            ],
-            "answer": "B"
-          }
-        ]
-      }
+  "ece": [
+    {
+      "id": 1,
+      "title": "ECE Question 1",
+      "description": "In electrical circuits, capacitors are crucial components that store electrical energy temporarily. They consist of two conductive plates separated by an insulating material (dielectric). When a voltage is applied, an electric field develops across the plates, allowing the capacitor to store energy. This question tests your understanding of the fundamental role of capacitors in circuit design, including their applications in filtering, timing, and energy storage.",
+      "difficulty": "Easy",
+      "tags": ["circuits", "electronics"],
+      "contributor": "John Doe",
+      "options": [
+        "A: Store electrical energy",
+        "B: Convert AC to DC",
+        "C: Amplify signals",
+        "D: Measure current"
+      ],
+      "correctAnswer": "Option A",
+      "successRate": 75,
+      "attempts": 100
+    },
+    {
+      "id": 2,
+      "title": "ECE Question 2",
+      "description": "Filters are essential in signal processing, allowing certain frequency components of a signal to pass through while attenuating others. A low-pass filter, for instance, is designed to allow signals with a frequency lower than a specified cutoff frequency to pass, effectively removing higher frequency noise. Understanding the characteristics and applications of different filter types is vital for anyone working with audio signals, communication systems, or any electronic applications where signal integrity is critical.",
+      "difficulty": "Medium",
+      "tags": ["signal processing", "filters"],
+      "contributor": "Jane Smith",
+      "options": [
+        "A: High-pass filter",
+        "B: Low-pass filter",
+        "C: Band-pass filter",
+        "D: Notch filter"
+      ],
+      "correctAnswer": "Option B",
+      "successRate": 60,
+      "attempts": 80
     }
-  }
-  
+  ],
+  "mech": [
+    {
+      "id": 1,
+      "title": "MECH Question 1",
+      "description": "The first law of thermodynamics, often referred to as the law of energy conservation, states that energy cannot be created or destroyed in an isolated system. This principle underpins much of thermodynamics, influencing how energy transformations occur within physical systems. It also highlights the relationship between heat and work in mechanical systems, making it essential for engineers to understand this law when designing engines, refrigerators, and other thermal systems.",
+      "difficulty": "Easy",
+      "tags": ["thermodynamics", "fluid mechanics"],
+      "contributor": "Alice Johnson",
+      "options": [
+        "A: Energy cannot be created or destroyed",
+        "B: Entropy of an isolated system always increases",
+        "C: Force equals mass times acceleration",
+        "D: Pressure is inversely proportional to volume"
+      ],
+      "correctAnswer": "Option A",
+      "successRate": 80,
+      "attempts": 120
+    },
+    {
+      "id": 2,
+      "title": "MECH Question 2",
+      "description": "Material properties are fundamental in mechanical engineering, and understanding how materials behave under different loads is critical for structural integrity. Hardness, which measures a material's resistance to localized plastic deformation, plays a significant role in determining its suitability for various applications, from cutting tools to building materials. This question evaluates your grasp of material properties and their implications in engineering design.",
+      "difficulty": "Hard",
+      "tags": ["mechanics", "materials"],
+      "contributor": "Bob Brown",
+      "options": [
+        "A: Ductility",
+        "B: Toughness",
+        "C: Hardness",
+        "D: Elasticity"
+      ],
+      "correctAnswer": "Option C",
+      "successRate": 50,
+      "attempts": 50
+    }
+  ],
+  "cse": [
+    {
+      "id": 1,
+      "title": "CSE Question 1",
+      "description": "Understanding the time complexity of data structures is crucial for evaluating the efficiency of algorithms. Arrays allow direct access to elements via their index, making them highly efficient for retrieval operations. This question tests your knowledge of time complexity in relation to arrays and its importance in algorithm design and analysis.",
+      "difficulty": "Easy",
+      "tags": ["algorithms", "data structures"],
+      "contributor": "Charlie Davis",
+      "options": [
+        "A: O(1)",
+        "B: O(n)",
+        "C: O(log n)",
+        "D: O(n^2)"
+      ],
+      "correctAnswer": "Option A",
+      "successRate": 85,
+      "attempts": 150
+    },
+    {
+      "id": 2,
+      "title": "CSE Question 2",
+      "description": "Single-page applications (SPAs) have become increasingly popular due to their enhanced user experience and faster interactions. Frameworks like React provide the tools necessary to build SPAs, allowing developers to create dynamic web applications that load content asynchronously. This question assesses your familiarity with modern web development frameworks and their role in creating efficient and responsive applications.",
+      "difficulty": "Medium",
+      "tags": ["web development", "frameworks"],
+      "contributor": "Diana Evans",
+      "options": [
+        "A: Flask",
+        "B: React",
+        "C: Django",
+        "D: Laravel"
+      ],
+      "correctAnswer": "Option B",
+      "successRate": 70,
+      "attempts": 200
+    }
+  ],
+  "aids": [
+    {
+      "id": 1,
+      "title": "AIDS Question 1",
+      "description": "Supervised learning is a core component of machine learning, where models are trained on labeled datasets. Algorithms such as Decision Trees are popular for classification tasks because they provide a clear mechanism for decision-making based on input features. This question evaluates your understanding of the fundamentals of supervised learning and its practical applications in various domains, including healthcare and finance.",
+      "difficulty": "Easy",
+      "tags": ["machine learning", "statistics"],
+      "contributor": "Eve Foster",
+      "options": [
+        "A: K-Means",
+        "B: Decision Trees",
+        "C: PCA",
+        "D: DBSCAN"
+      ],
+      "correctAnswer": "Option B",
+      "successRate": 90,
+      "attempts": 90
+    },
+    {
+      "id": 2,
+      "title": "AIDS Question 2",
+      "description": "Convolutional Neural Networks (CNNs) are designed specifically for processing grid-like data, such as images. They use convolutional layers to extract features from images, making them highly effective for tasks like image classification and object detection. This question assesses your understanding of CNNs and their applications in deep learning, particularly in the context of computer vision.",
+      "difficulty": "Hard",
+      "tags": ["deep learning", "neural networks"],
+      "contributor": "Frank Green",
+      "options": [
+        "A: Time series forecasting",
+        "B: Image processing and classification",
+        "C: Text generation",
+        "D: Anomaly detection"
+      ],
+      "correctAnswer": "Option B",
+      "successRate": 65,
+      "attempts": 60
+    }
+  ]
+}
